@@ -11,7 +11,7 @@
 
 GitHub Pagesには、確認済みの静的画面ファイルだけを配信します。認証名簿、学習ログ、接続用秘密情報はこのリポジトリに含めません。
 
-各リリースの `site.zip` が公開対象です。`site.zip.sha256` の整合性を確認した後、GitHub ActionsがPagesへ配信します。更新は新しいリリースとして行います。
+各リリースの `site.zip` が公開対象です。`site.zip.sha256` の整合性を確認した後、GitHub ActionsがPagesへ配信します。更新は新しいリリースとして行い、Actionsの「Publish GitHub Pages」をmainブランチで実行して公開します。リリースタグを指定するため、公開対象を明確に確認できます。
 
 CCNATigerアカウントの照合とログイン利用者の記録保存は、専用のGoogle Apps Scriptで処理します。ゲスト利用では保存要求を送りません。
 
